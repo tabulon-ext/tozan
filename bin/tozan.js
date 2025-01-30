@@ -9,8 +9,8 @@
  * Licensed under the MIT license
  */
 
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 
 import optionator from 'optionator';
 
@@ -102,7 +102,7 @@ const directory = path.resolve(opts._[0]);
 try {
   fs.accessSync(directory);
 }
-catch (error) {
+catch {
   console.error(`Directory "${directory}" does not exist`);
   process.exit(1);
 }

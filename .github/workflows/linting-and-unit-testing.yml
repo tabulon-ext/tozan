@@ -1,4 +1,4 @@
-name: Node.js v16 CI
+name: Node.js v22 CI
 
 on: [push]
 
@@ -8,11 +8,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js v16
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js v22
+      uses: actions/setup-node@v4
       with:
-        node-version: '16.x'
-    - run: npm ci
-    - run: npm run lint
-    - run: npm test
+        node-version: '22.x'
+
+    - name: Install Node.js dependencies
+      run: npm ci
+
+    - name: Lint and test
+      run: |
+        npm run lint
+        npm test
+        npm run coverage
+
+    - name: Upload code coverage to codecov
+      # https://github.com/marketplace/actions/codecov
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: coverage.lcov
