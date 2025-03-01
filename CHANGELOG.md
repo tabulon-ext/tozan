@@ -3,7 +3,26 @@
 This changelog covers the version history and possible upcoming changes.
 It follows the guidance from https://keepachangelog.com/en/1.0.0/.
 
-## Unreleased
+## `v8.0.0` (2024-12-21)
+
+- Minimum supported Node.js version lifted from `18.12.0` to `22.11.0`
+- Most notable dependency, `better-sqlite3` has been upgraded from `8.4.0` to `11.7.0` 
+
+## `v7.0.1` (2023-06-28)
+
+- Another try with wildcard exports
+
+## `v7.0.0` (2023-06-28)
+
+- Minimum supported Node.js version lifted from `16.13.0` to `18.12.0`
+- Typescript type dictionaries were not generated properly
+- Expose additional methods from the `lib` directory again
+
+## `v6.1.0` (2023-06-05)
+
+- Start testing against Node.js v18
+- Update dependencies, most notably [major version of `better-sqlite3`](https://github.com/WiseLibs/better-sqlite3/releases/tag/v8.0.0)
+- Testing with [Deepsource](https://app.deepsource.com/gh/paazmaya/tozan/)
 
 ## `v6.0.0` (2021-11-24)
 

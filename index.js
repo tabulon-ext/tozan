@@ -9,7 +9,7 @@
 
 import {
   execSync
-} from 'child_process';
+} from 'node:child_process';
 
 import arrayUniq from 'array-uniq';
 
@@ -30,7 +30,7 @@ export const openSSLVersion = (command) => {
   try {
     return execSync(command, constants.EXEC_OPTIONS);
   }
-  catch (error) {
+  catch {
     console.error('Looks like "openssl" is not available, hence cannot continue.');
 
     return false;

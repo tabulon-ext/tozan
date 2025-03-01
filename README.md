@@ -4,21 +4,23 @@
 
 [![Windows build status](https://ci.appveyor.com/api/projects/status/bd4af4tkql7usxwq/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/tozan/branch/master)
 [![CircleCI](https://circleci.com/gh/paazmaya/tozan.svg?style=svg)](https://circleci.com/gh/paazmaya/tozan)
-[![Node.js v16 CI](https://github.com/paazmaya/tozan/actions/workflows/linting-and-unit-testing.yml/badge.svg)](https://github.com/paazmaya/tozan/actions/workflows/linting-and-unit-testing.yml)
+[![Node.js v22 CI](https://github.com/paazmaya/tozan/actions/workflows/linting-and-unit-testing.yml/badge.svg)](https://github.com/paazmaya/tozan/actions/workflows/linting-and-unit-testing.yml)
 [![codecov](https://codecov.io/gh/paazmaya/tozan/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/tozan)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpaazmaya%2Ftozan.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpaazmaya%2Ftozan?ref=badge_shield)
 [![DeepSource](https://deepsource.io/gh/paazmaya/tozan.svg/?label=active+issues&show_trend=true&token=5S_Ijf0eG_jzMUpAb3Dwn7CU)](https://deepsource.io/gh/paazmaya/tozan/?ref=repository-badge)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/paazmaya/tozan.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/paazmaya/tozan/alerts/)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=paazmaya_tozan&metric=code_smells)](https://sonarcloud.io/dashboard?id=paazmaya_tozan)
+[![OpenSSF Scorecard](htt‌ps://api.securityscorecards.dev/projects/github.com/paazmaya/tozan/badge)](htt‌ps://securityscorecards.dev/viewer/?uri=github.com/paazmaya/tozan)
 
 Go trough the files under a given directory, generate a hash of each of the files (which by default is SHA1), and store the hashes to a SQLite database (which by default is in memory).
 In case the given file was already listed in the database, its entry will be updated.
 
-Please note that the minimum supported version of [Node.js](https://nodejs.org/en/) is `16.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
+Please note that the minimum supported version of [Node.js](https://nodejs.org/en/) is `22.11.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
 
-## Background for the name
+## Background for the project name
 
 The name of the project (Tozan, 当山) is for honouring the legacy of a certain master from the Ryukyu archipelago, Japan, who contributed to the martial arts that we today know as **karate** and **ryukyu kobujutsu**.
+
+[Read more about why these martial arts are important for me at `karatejukka.fi`.](https://karatejukka.fi)
 
 ## Installation
 
